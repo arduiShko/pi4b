@@ -1,0 +1,55 @@
+<!--https://docs.google.com/spreadsheets/d/1pkymwnunBtzDVnvU5Am0bxJMUprHRaaE4JEyr3JbhNM/edit?usp=sharing-->
+<!--https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1pkymwnunBtzDVnvU5Am0bxJMUprHRaaE4JEyr3JbhNM&sheet=Sheet1-->
+<HTML>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="function.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script type="text/javascript" charset="utf8" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  
+  <body onload="desenhaGrafico()">
+	<ul id="flyoutMenu">
+		<li class="topo" a="href">Topo <i class="material-icons">account_balance</i></li>
+		<li class="sobreProjeto" a="href">Sobre o Projeto <i class="material-icons">settings_system_daydream</i></li>
+		<li class="leituraSensor" a="href">Leitura do sensor <i class="material-icons">dvr</i></li>
+		<li class="graficos" a="href">Gráficos <i class="material-icons">equalizer</i></li>
+	</ul>
+	<div id="cabecalho">
+	  <div id="tituloCabecalho">
+		<h2>Projeto ECA4BN - UNA</h2>
+		<h3>Aplicação da persistência de dados no contexto do gerenciamento do consumo de energia elétrica residencial</h3>
+	  </div>
+	</div>
+	<div id="descricao">
+	  <h2>Sobre o projeto</h2>
+	  <p>"Mediante ao cenário de um iminente racionamento de energia elétrica, decidiu-se construir um gerenciador de energia elétrica residencial. Este, irá auxiliar consumidores à verificar em tempo real a quantidade de KW/h e o valor aproximado de quanto foi gasto em um determinado processo, seja um chuveiro, secador de cabelos, lâmpada, dentre outros. O usuário poderá, também, verificar em tempo real através de um WebSite, os resultados gerados por gráficos." </p>
+	</div>
+	<ul id="botoes">
+		<li class="botao1" onclick="reload()">Refresh</li>
+	</ul>
+	<div id="tabela"></div>
+	<div id="graficoseanalises">
+		<i class="material-icons" id="backward" >navigate_before</i>
+		<i class="material-icons" id="forward" >navigate_next</i>	
+		<h2>Gráficos e análises</h2>
+		<ul id="sliderControl">
+			<li class="control1">Gráfico de Linhas</li>
+			<li class="control2">Gráfico de Áreas</li>
+			<li class="control3">Gráfico de Colunas</li>
+		</ul>    
+		<div id="graph">
+		   <ul id="slider">
+			 <li id="lineChart"></li>
+			 <li id="areaChart"></li>
+			 <li id="comboChart"></li>
+		   </ul>
+		</div>
+	</div>
+	<footer id="rodape"><p>Criado por Leandro Correia de Resende</p></footer>
+	
+  </body>
+</HTML>
